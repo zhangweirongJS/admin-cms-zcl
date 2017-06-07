@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>check_freight</title>
+    <!--引入public.css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--引入bootstrap.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--字体css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--引入JQ-->
+    <script src="js/jquery.js"></script>
+    <!--引入bootstrap.js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--引入public-->
+    <script src="js/public.js"></script>
+
+    <!--第二部分-->
+    <script src="js/qikoo.js"></script>
+    <script src="js/jpages.js"></script>
+
+    <!--第三部分js-->
+    <script src="js/laydate.js"></script>
+</head>
+<body>
+
+
+<nav class="hd-nav clearfix">
+
+    <a class="logo-img pull-left" href="#"><img src="img/logo.jpg" alt=""></a>
+
+    <div class="hd-nav-view clearfix">
+        <h3 class="pull-left title-h3">
+            货运信息管理系统
+        </h3>
+        <i class="icon-th-list" data-num="1"></i>
+        <ul class="hd-nav-list pull-right">
+            <li><a href="change_password.html"><i class="icon-user"></i><span>你好,Admin</span></a></li>
+            <li><a href="information-list.html"><i class="icon-home"></i><span>网站首页</span></a></li>
+            <li><a href=""><i class="icon-off"></i><span>退出</span></a></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<!--遮罩层-->
+<div class="mask"></div>
+
+<!--侧栏导航开始-->
+<div class="nav-aside">
+
+    <div class="nav-aside-view">
+
+
+        <!--企业信息管理-->
+        <div class="list-title">
+            <i class="icon-building"></i>企业信息管理<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="information-list.html">企业信息列表</a></li>
+            <li><a href="information-editor.html">企业信息编辑</a></li>
+            <li><a href="information-details.html">企业详情</a></li>
+        </ul>
+
+
+        <!--货运计划-->
+        <div class="list-title">
+            <i class="icon-edit"></i>货运计划<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="plan-list.html">计划列表</a></li>
+            <li><a href="plan-editor.html">计划编辑</a></li>
+            <li><a href="plan-details.html">计划详情</a></li>
+        </ul>
+
+
+        <!--货运信息登记-->
+        <div class="list-title">
+            <i class="icon-file-alt"></i>货运信息登记<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="check_freight.html">登记货运信息</a></li>
+            <li><a href="ex_import.html">Excel导入</a></li>
+            <li><a href="ship_list.html">货运清单</a></li>
+            <li><a href="ship_details.html">货运详情</a></li>
+        </ul>
+
+
+        <!--物流跟踪-->
+        <div class="list-title">
+            <i class="icon-truck"></i>物流跟踪<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="javascript:;">查询统计</a></li>
+        </ul>
+
+
+        <!--竞价管理-->
+        <div class="list-title">
+            <i class="icon-legal"></i>竞价管理<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="tender-list.html">招标清单</a></li>
+            <li><a href="tender-choice.html">选招</a></li>
+            <li><a href="tender-info.html">招标信息</a></li>
+            <li><a href="tender-info-pre.html">招标信息预览</a></li>
+            <li><a href="tender-book.html">标书</a></li>
+            <li><a href="tender-quote.html">在线报价</a></li>
+            <li><a href="tender-check.html">中标审核</a></li>
+            <li><a href="tender-confirm.html">中标确认</a></li>
+        </ul>
+
+
+    </div>
+
+</div>
+<!--侧栏导航结束-->
+
+
+<!--主体内容开始-->
+<div class="content-wrapper">
+
+    <div class="pb-title clearfix">
+        <div class="pb-title-list">
+            当前位置: <span>后台管理系统</span>>><span>企业信息列表</span>
+        </div>
+        <i class="bg-list-img"></i>
+    </div>
+
+    <div class="container-fluid pb">
+
+        <!--row开始-->
+        <div class="row con-view">
+            <div class="col-lg-12">
+                <section class="panel">
+
+                    <header class="panel-heading clearfix">
+                        <div class="col-lg-7 title-font">
+                            企业信息列表
+                        </div>
+
+                        <div class="input-group col-lg-5">
+
+                            <input type="text" class="form-control glyphicon glyphicon-search">
+                            <span class="input-group-addon text-top">
+                                <a href="#">hfdhfghfgh查询</a>
+                            </span>
+
+                            <input type="text" class="form-control glyphicon glyphicon-search">
+                            <span class="input-group-addon">
+                                <i class="icon-search"></i>
+                                <a href="#">查询</a>
+                            </span>
+                        </div>
+
+
+                    </header>
+
+                    <div class="panel-body tab">
+
+
+                        <!--row开始-->
+                        <div class="list">
+
+                            <!--操作按钮-->
+                            <div class="btn-group btn-icon">
+                                <a href="information-editor.html">
+                                    <i class="icon-plus"></i>添加
+                                </a>
+                                <a href="#" class="del">
+                                    <i class="icon-remove"></i>删除
+                                </a>
+                                <a href="information-editor.html">
+                                    <i class="icon-edit"></i>编辑
+                                </a>
+                            </div>
+
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th><input type="checkbox" name="check[]"></th>
+                                        <th>企业名</th>
+                                        <th>企业性质</th>
+                                        <th>所属行业</th>
+                                        <th>企业优势</th>
+                                        <th>成立时间</th>
+                                        <th>注册资金</th>
+                                        <th>信用等级</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="topage">
+                                    <tr>
+                                        <td><input type="checkbox" name="check[]"></td>
+                                        <td><a href="">吉林长春运输部</a></td>
+                                        <td>国企</td>
+                                        <td>运输</td>
+                                        <td>长春-鲅鱼圈</td>
+                                        <td>2000/01/01</td>
+                                        <td>100000</td>
+                                        <td>100000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="check[]"></td>
+                                        <td>黑龙江哈尔滨运输部</td>
+                                        <td>国企</td>
+                                        <td>运输</td>
+                                        <td>哈尔滨-九阳</td>
+                                        <td>2000/02/05</td>
+                                        <td>250000</td>
+                                        <td>250000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="check[]"></td>
+                                        <td>吉林长春运输部</td>
+                                        <td>国企</td>
+                                        <td>运输</td>
+                                        <td>长春-鲅鱼圈</td>
+                                        <td>2000/01/01</td>
+                                        <td>100000</td>
+                                        <td>100000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="check[]"></td>
+                                        <td>黑龙江哈尔滨运输部</td>
+                                        <td>国企</td>
+                                        <td>运输</td>
+                                        <td>哈尔滨-九阳</td>
+                                        <td>2000/02/05</td>
+                                        <td>250000</td>
+                                        <td>250000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="check[]"></td>
+                                        <td>吉林长春运输部</td>
+                                        <td>国企</td>
+                                        <td>运输</td>
+                                        <td>长春-鲅鱼圈</td>
+                                        <td>2000/01/01</td>
+                                        <td>100000</td>
+                                        <td>100000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="check[]"></td>
+                                        <td>黑龙江哈尔滨运输部</td>
+                                        <td>国企</td>
+                                        <td>运输</td>
+                                        <td>哈尔滨-九阳</td>
+                                        <td>2000/02/05</td>
+                                        <td>250000</td>
+                                        <td>250000</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div class="foot-page">
+                            <div class="pagination clearfix">
+                                <p class="pull-right" style="padding-right: 15px">
+                                    第 <b>1</b>/<b>1</b> 页，共有 <b>4</b> 条 &nbsp;信息
+                                </p>
+                                <select name="pages" class="pull-right">
+                                    <option value="0">1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <!--row--end-->
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <!--row--end-->
+
+    </div>
+
+</div>
+<!--主体内容结束-->
+
+<!--主体内容结束-->
+<script type="text/javascript">
+
+
+    function del() {
+        var input = document.getElementsByName("check[]");
+        for (var i = input.length - 1; i >= 0; i--) {
+            if (input[i].checked == true) {
+                var td = input[i].parentNode;
+                var tr = td.parentNode;
+                var table = tr.parentNode;
+                table.removeChild(tr);
+            }
+
+        }
+
+    }
+</script>
+
+</body>
+</html>

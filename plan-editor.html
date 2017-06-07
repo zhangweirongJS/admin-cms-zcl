@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>check_freight</title>
+    <!--引入public.css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--引入bootstrap.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--字体css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--引入JQ-->
+    <script src="js/jquery.js"></script>
+    <!--引入bootstrap.js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--引入public-->
+    <script src="js/public.js"></script>
+
+    <!--第二部分-->
+    <script src="js/qikoo.js"></script>
+    <script src="js/jpages.js"></script>
+    <!--第三部分js-->
+    <script src="js/laydate.js"></script>
+</head>
+<body>
+
+
+<nav class="hd-nav clearfix">
+
+    <a class="logo-img pull-left" href="#"><img src="img/logo.jpg" alt=""></a>
+
+    <div class="hd-nav-view clearfix">
+        <h3 class="pull-left title-h3">
+            货运信息管理系统
+        </h3>
+        <i class="icon-th-list" data-num="1"></i>
+        <ul class="hd-nav-list pull-right">
+            <li><a href="change_password.html"><i class="icon-user"></i><span>你好,Admin</span></a></li>
+            <li><a href="information-list.html"><i class="icon-home"></i><span>网站首页</span></a></li>
+            <li><a href=""><i class="icon-off"></i><span>退出</span></a></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<!--遮罩层-->
+<div class="mask"></div>
+
+<!--侧栏导航开始-->
+<div class="nav-aside">
+
+    <div class="nav-aside-view">
+
+
+        <!--企业信息管理-->
+        <div class="list-title">
+            <i class="icon-building"></i>企业信息管理<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="information-list.html">企业信息列表</a></li>
+            <li><a href="information-editor.html">企业信息编辑</a></li>
+            <li><a href="information-details.html">企业详情</a></li>
+        </ul>
+
+
+        <!--货运计划-->
+        <div class="list-title">
+            <i class="icon-edit"></i>货运计划<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="plan-list.html">计划列表</a></li>
+            <li><a href="plan-editor.html">计划编辑</a></li>
+            <li><a href="plan-details.html">计划详情</a></li>
+        </ul>
+
+
+        <!--货运信息登记-->
+        <div class="list-title">
+            <i class="icon-file-alt"></i>货运信息登记<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="check_freight.html">登记货运信息</a></li>
+            <li><a href="ex_import.html">Excel导入</a></li>
+            <li><a href="ship_list.html">货运清单</a></li>
+            <li><a href="ship_details.html">货运详情</a></li>
+        </ul>
+
+
+        <!--物流跟踪-->
+        <div class="list-title">
+            <i class="icon-truck"></i>物流跟踪<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="javascript:;">查询统计</a></li>
+        </ul>
+
+
+        <!--竞价管理-->
+        <div class="list-title">
+            <i class="icon-legal"></i>竞价管理<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="tender-list.html">招标清单</a></li>
+            <li><a href="tender-choice.html">选招</a></li>
+            <li><a href="tender-info.html">招标信息</a></li>
+            <li><a href="tender-info-pre.html">招标信息预览</a></li>
+            <li><a href="tender-book.html">标书</a></li>
+            <li><a href="tender-quote.html">在线报价</a></li>
+            <li><a href="tender-check.html">中标审核</a></li>
+            <li><a href="tender-confirm.html">中标确认</a></li>
+        </ul>
+
+
+    </div>
+
+</div>
+<!--侧栏导航结束-->
+
+
+<!--主体内容开始-->
+<div class="content-wrapper">
+
+
+    <div class="pb-title clearfix">
+        <div class="pb-title-list">
+            当前位置: <span>后台管理系统</span>>><span>货运计划</span> >> <span>计划编辑</span>
+        </div>
+        <i class="bg-list-img"></i>
+    </div>
+
+    <div class="container-fluid pb">
+
+        <!--row开始-->
+        <div class="row con-view">
+            <div class="col-lg-12">
+                <section class="panel">
+
+                    <header class="panel-heading">
+                        计划编辑
+                    </header>
+
+                    <div class="panel-body">
+
+                        <!--表单-->
+                        <form class="form-horizontal" role="form" action="">
+                            <ul class="row">
+
+                                <!--计划号-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">计划号：</label>
+                                    <input type="text" class="form-control" placeholder="JH2016100301">
+                                </li>
+
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">品名：</label>
+                                    <input type="text" class="form-control" placeholder="粮食">
+                                </li>
+
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class=" control-label">计划分类：</label>
+                                    <select class="form-control">
+                                        <option>政策粮</option>
+                                        <option>贸易粮</option>
+                                    </select>
+
+                                </li>
+
+                                <!--拟运吨数-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">拟运吨数：</label>
+                                    <input type="text" class="form-control" placeholder="吉林省高产粮食营养丰富">
+                                </li>
+
+                                <!--货物说明-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">货物说明：</label>
+                                    <input type="text" class="form-control" placeholder="深圳澳客信息有限公司">
+                                </li>
+
+                                <!--标题------------------------>
+                                <li class="col-xs-12 col-sm-12 col-md-12">
+                                    <h2 style="font-size: 18px">发货信息</h2>
+                                </li>
+
+                                <!--发货地-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">发货地：</label>
+                                    <input type="text" class="form-control" placeholder="吉林市">
+                                </li>
+
+                                <!--发货人-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">发货人：</label>
+                                    <input type="text" class="form-control" placeholder="张继东">
+                                </li>
+
+                                <!--局别-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">局别：</label>
+                                    <input type="text" class="form-control" placeholder="张继东">
+                                </li>
+
+                                <!--装车专用线-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">装车站：</label>
+                                    <input type="text" class="form-control" placeholder="吉林哈尔滨">
+                                </li>
+
+                                <!--装车专用线-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">装车专用线：</label>
+                                    <input type="text" class="form-control" placeholder="无">
+                                </li>
+
+                                <!--卸车专用线-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">卸车专用线：</label>
+                                    <input type="text" class="form-control" placeholder="无">
+                                </li>
+
+
+                                <!--标题------------------------>
+                                <li class="col-xs-12 col-sm-12 col-md-12">
+                                    <h2 style="font-size: 18px">收货信息</h2>
+                                </li>
+
+                                <!--收货地-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class=" control-label">收货地：</label>
+                                    <input type="text" class="form-control" placeholder="辽宁省鲅鱼">
+                                </li>
+
+                                <!--收货人-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">收货人：</label>
+                                    <input type="text" class="form-control" placeholder="张连奎">
+                                </li>
+
+
+                                <!--收货站-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">收货站：</label>
+                                    <input type="text" class="form-control" placeholder="鲅鱼圈港">
+                                </li>
+
+                                <!--标题------------------------>
+                                <li class="col-xs-12 col-sm-12 col-md-12">
+                                    <h2 style="font-size: 18px">运输要求</h2>
+                                </li>
+
+
+                                <!--装运要求-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">装运要求：</label>
+                                    <input type="text" class="form-control" placeholder="必须按照发货方严格装运">
+                                </li>
+
+
+                                <!--运输方式-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">运输方式：</label>
+                                    <select class="form-control">
+                                        <option>海铁航运</option>
+                                        <option>汽运直达</option>
+                                        <option>海运直达</option>
+                                    </select>
+                                </li>
+
+
+                                <!--装卸能力-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">装卸能力：</label>
+                                    <input type="text" class="form-control" placeholder="无">
+                                </li>
+
+
+                                <!--集并港口-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">集并港口：</label>
+                                    <input type="text" class="form-control" placeholder="无">
+                                </li>
+
+
+                                <!--运输分类-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">运输分类：</label>
+                                    <select class="form-control">
+                                        <option>集装箱</option>
+                                        <option>散船</option>
+                                    </select>
+
+                                </li>
+
+
+                                <!--装运条件-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">装运条件：</label>
+                                    <input type="text" class="form-control" placeholder="未知">
+                                </li>
+
+                                <!--计划发运时间-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">计划发运时间：</label>
+                                    <input type="text" id="start1" class="form-control" placeholder="2015-12-5">
+                                </li>
+
+                                <!--拟交货时间-->
+                                <li class="col-xs-12 col-sm-6 col-md-4">
+                                    <label class="control-label">拟交货时间：</label>
+                                    <input type="text" id="final2" class="form-control" placeholder="2015-12-5">
+                                </li>
+
+                            </ul>
+
+
+                            <!--保存按钮-->
+                            <div class="btnbc btn-button">
+                                <a href="plan-list.html">
+                                    <button type="button" class="btn btn-success"><i class="icon-save" style="padding-right: 5px"></i>保存</button>
+                                </a>
+                            </div>
+                        </form>
+
+
+                    </div>
+
+                </section>
+            </div>
+
+        </div>
+        <!--row--end-->
+
+
+    </div>
+
+</div>
+<script>
+    laydate({
+        elem: '#start1'
+    });
+    laydate({
+        elem: '#final2'
+    });
+</script>
+</body>
+</html>

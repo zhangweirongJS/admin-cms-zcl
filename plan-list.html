@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>check_freight</title>
+    <!--引入public.css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--引入bootstrap.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--字体css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--引入JQ-->
+    <script src="js/jquery.js"></script>
+    <!--引入bootstrap.js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--引入public-->
+    <script src="js/public.js"></script>
+
+    <!--第二部分-->
+    <script src="js/qikoo.js"></script>
+    <script src="js/jpages.js"></script>
+    <!--第三部分js-->
+    <script src="js/laydate.js"></script>
+
+
+</head>
+<body>
+
+
+<nav class="hd-nav clearfix">
+
+    <a class="logo-img pull-left" href="#"><img src="img/logo.jpg" alt=""></a>
+
+    <div class="hd-nav-view clearfix">
+        <h3 class="pull-left title-h3">
+            货运信息管理系统
+        </h3>
+        <i class="icon-th-list" data-num="1"></i>
+        <ul class="hd-nav-list pull-right">
+            <li><a href="change_password.html"><i class="icon-user"></i><span>你好,Admin</span></a></li>
+            <li><a href="information-list.html"><i class="icon-home"></i><span>网站首页</span></a></li>
+            <li><a href=""><i class="icon-off"></i><span>退出</span></a></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<!--遮罩层-->
+<div class="mask"></div>
+
+<!--侧栏导航开始-->
+<div class="nav-aside">
+
+    <div class="nav-aside-view">
+
+
+        <!--企业信息管理-->
+        <div class="list-title">
+            <i class="icon-building"></i>企业信息管理<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="information-list.html">企业信息列表</a></li>
+            <li><a href="information-editor.html">企业信息编辑</a></li>
+            <li><a href="information-details.html">企业详情</a></li>
+        </ul>
+
+
+        <!--货运计划-->
+        <div class="list-title">
+            <i class="icon-edit"></i>货运计划<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="plan-list.html">计划列表</a></li>
+            <li><a href="plan-editor.html">计划编辑</a></li>
+            <li><a href="plan-details.html">计划详情</a></li>
+        </ul>
+
+
+        <!--货运信息登记-->
+        <div class="list-title">
+            <i class="icon-file-alt"></i>货运信息登记<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="check_freight.html">登记货运信息</a></li>
+            <li><a href="ex_import.html">Excel导入</a></li>
+            <li><a href="ship_list.html">货运清单</a></li>
+            <li><a href="ship_details.html">货运详情</a></li>
+        </ul>
+
+
+        <!--物流跟踪-->
+        <div class="list-title">
+            <i class="icon-truck"></i>物流跟踪<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="javascript:;">查询统计</a></li>
+        </ul>
+
+
+        <!--竞价管理-->
+        <div class="list-title">
+            <i class="icon-legal"></i>竞价管理<i class="icon-angle-left"></i>
+        </div>
+        <ul class="list-view">
+            <li><a href="tender-list.html">招标清单</a></li>
+            <li><a href="tender-choice.html">选招</a></li>
+            <li><a href="tender-info.html">招标信息</a></li>
+            <li><a href="tender-info-pre.html">招标信息预览</a></li>
+            <li><a href="tender-book.html">标书</a></li>
+            <li><a href="tender-quote.html">在线报价</a></li>
+            <li><a href="tender-check.html">中标审核</a></li>
+            <li><a href="tender-confirm.html">中标确认</a></li>
+        </ul>
+
+
+    </div>
+
+</div>
+<!--侧栏导航结束-->
+
+
+<!--主体内容开始-->
+<div class="content-wrapper">
+
+    <div class="pb-title clearfix">
+        <div class="pb-title-list">
+            当前位置: <span>后台管理系统</span>>><span>货运计划</span> >> <span>计划列表</span>
+        </div>
+        <i class="bg-list-img"></i>
+    </div>
+
+
+    <div class="container-fluid pb">
+
+        <!--row开始-->
+        <div class="row con-view">
+            <div class="col-lg-12">
+                <section class="panel">
+
+                    <header class="panel-heading clearfix">
+                        <div class="col-lg-9 title-font">
+                            计划列表
+                        </div>
+                        <div class="input-group col-lg-3">
+                            <select  class="form-control pull-right" style="width: 120px">
+                                <option value="0">海运海运</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                            </select>
+							<a href="" class="input-group-addon">
+                                <i class="icon-search"></i>
+                               查询
+                            </a>
+                        </div>
+                    </header>
+
+                    <div class="panel-body tab">
+
+
+                        <!--列表内容-->
+                        <div class="list">
+
+
+                            <!--操作按钮-->
+                            <div class="btn-group btn-icon">
+                                <a href="information-editor.html">
+                                    <i class="icon-plus"></i>添加
+                                </a>
+                                <a href="#" class="del">
+                                    <i class="icon-remove"></i>删除
+                                </a>
+                                <a href="information-editor.html">
+                                    <i class="icon-edit"></i>编辑
+                                </a>
+                            </div>
+
+                            <!--表格-->
+                            <div class="table-responsive" id="plan_table">
+                                <table class="table table-hover table-icon">
+                                    <thead>
+                                    <tr>
+                                        <th><input type="checkbox" name="check[]"></th>
+                                        <th>计划号</th>
+                                        <th>品名</th>
+                                        <th>计划吨数</th>
+                                        <th>发货信息</th>
+                                        <th>运输方式</th>
+                                        <th>运输要求</th>
+                                        <th>承运商</th>
+                                        <th>联系电话</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="topage">
+                                    <!--第一行-->
+                                    <tr>
+                                        <td><input type="checkbox" name="check[]"></td>
+                                        <td><i class="down icon-caret-down"></i>JH2016101701</td>
+                                        <td>高粱</td>
+                                        <td>10</td>
+                                        <td>发货人：</br>发货站：</br>发货地：</br></td>
+                                        <td>陆运</td>
+                                        <td>按照发货方</td>
+                                        <td>长春高铁局</td>
+                                        <td>15656465646</td>
+                                        <td>
+                                            <a href="plan-editor.html"><i class="icon-edit icon"></i></a>
+                                            <a href="bidding-information.html"><i class="icon-flag icon"></i></a>
+                                        </td>
+                                    </tr>
+                                    <!--第二行-->
+                                    <tr>
+                                        <td><input type="checkbox" name="check[]"></td>
+                                        <td><i class="down icon-caret-down"></i>JH2016101701</td>
+                                        <td>高粱</td>
+                                        <td>10</td>
+                                        <td>发货人：</br>发货站：</br>发货地：</br></td>
+                                        <td>陆运</td>
+                                        <td>按照发货方</td>
+                                        <td>长春高铁局</td>
+                                        <td>15656465646</td>
+                                        <td>
+                                            <a href="plan-editor.html"><i class="icon-edit icon"></i></a>
+                                            <a href="bidding-information.html"><i class="icon-flag icon"></i></a>
+                                        </td>
+                                    </tr>
+                                    <!--第三行-->
+                                    <tr>
+                                        <td><input type="checkbox" name="check[]"></td>
+                                        <td><i class="down icon-caret-down"></i>JH2016101701</td>
+                                        <td>高粱</td>
+                                        <td>10</td>
+                                        <td>发货人：</br>发货站：</br>发货地：</br></td>
+                                        <td>陆运</td>
+                                        <td>按照发货方</td>
+                                        <td>长春高铁局</td>
+                                        <td>15656465646</td>
+                                        <td>
+                                            <a href="plan-editor.html"><i class="icon-edit icon"></i></a>
+                                            <a href="bidding-information.html"><i class="icon-flag icon"></i></a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--分页-->
+                        <div class="foot-page">
+                            <div class="pagination clearfix">
+                                <p class="pull-right" style="padding-right: 15px">
+                                    第 <b>1</b>/<b>1</b> 页，共有 <b>4</b> 条 &nbsp;信息
+                                </p>
+                                <select name="pages" class="pull-right">
+                                    <option value="0">1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <!--row--end-->
+
+
+    </div>
+
+</div>
+<!--主体内容结束-->
+<script type="text/javascript">
+
+    function plan_tr() {
+
+        $(this).removeClass('icon-caret-down').addClass('icon-caret-up');
+        $(this).parents('tr').next('.tab_tr').remove()
+
+
+        var table = "<table class='table table-bordered table-condensed table-responsive'>";
+        table += '<thead> <tr> <th>计划号</th> <th>品名</th> <th>操作</th><th>操作</th> </tr> </thead>';
+        table += '<tr><td>第一行</td><td>第一行</td><td>第一行</td><td>第一行</td></tr>';
+        table += '<tr><td>第二行</td><td>第二行</td><td>第二行</td><td>第二行</td></tr>';
+        table += '</table> ';
+
+
+        $(this).parents('tr').after('<tr class="tab_tr"><td colspan="10">' + table + '</td></tr>')
+
+    }
+
+    $('#plan_table').on('click', '.icon-caret-down', plan_tr);
+
+
+    $('#plan_table').on('click', '.icon-caret-up', function () {
+        $(this).removeClass('icon-caret-up').addClass('icon-caret-down');
+        $(this).parents('tr').next('.tab_tr').remove()
+    });
+
+
+</script>
+</body>
+</html>

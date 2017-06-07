@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>check_freight</title>
+    <!--引入public.css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--引入bootstrap.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--字体css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--引入JQ-->
+    <script src="js/jquery.js"></script>
+    <!--引入bootstrap.js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--引入public-->
+    <script src="js/public.js"></script>
+
+    <!--第二部分-->
+    <script src="js/qikoo.js"></script>
+    <script src="js/jpages.js"></script>
+    <!--第三部分js-->
+    <script src="js/laydate.js"></script>
+
+
+</head>
+<body>
+
+<!--进度 start-->
+<div class="data-progress clearfix">
+
+    <h3 class="title">提交资料</h3>
+
+
+    <ul class="clearfix">
+        <li class="active"><a href="big_data_one.html">货物信息</a></li>
+        <li><a href="big_data_two.html">客户信息、运输信息、投保承诺、发票信息</a></li>
+        <li><a href="big_data_three.html">全信息预览</a></li>
+    </ul>
+
+
+</div>
+<!--进度 end-->
+
+<div class="container-fluid prog pb">
+
+    <!--row开始-->
+    <div class="row con-view">
+        <div class="col-lg-12">
+            <section class="panel bor-cor-e0">
+
+                <header class="panel-heading clearfix">
+                    <div class="title-font">
+                        货物信息
+                    </div>
+                </header>
+
+                <div class="panel-body">
+
+                    <!--表单在此-->
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">注:</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static alert-warning">投保蔬菜鲜花水果请选择动植物这一类货物，投保玻璃陶瓷等易碎品选择其他货物类</p>
+                            </div>
+                        </div>
+
+
+                        <!---->
+                        <div class="form-group">
+                            <label  class="col-sm-1 control-label">货物名称:</label>
+                            <div class="col-sm-3">
+                                <select class="form-control">
+                                    <option selected="selected" value="">选择货类</option>
+                                    <option value="01">粮油食品、饲料</option>
+                                    <option value="02">动、植物</option>
+                                    <option
+                                            value="03">轻工、文体、机电
+                                    </option>
+                                    <option
+                                            value="04">机械、设备
+                                    </option>
+                                    <option
+                                            value="05">石油、化工原料及产品
+                                    </option>
+                                    <option
+                                            value="06">五金、矿产及建材
+                                    </option>
+                                    <option
+                                            value="09">其他
+                                    </option>
+                                </select>&nbsp;&nbsp;
+                            </div>
+                            <div class="col-sm-3">
+                                <input class="form-control" type="text" maxlength="25" placeholder="输入货名" value="">
+                            </div>
+
+                            <div class="col-sm-4">
+                                *提示：《不同货类对应不同费率，货类变更时请从新计算保费》
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">注:</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static alert-warning">提示：一个保单最多允许同时申报100个箱》</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-offset-1 col-sm-10">
+                                <table class="table ">
+                                    <tbody>
+                                    <tr>
+                                        <td>箱号</td>
+                                        <td>铅封号</td>
+                                        <td>每箱保险金额(元)</td>
+                                        <td>操作</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-control" placeholder="必填项" value="">
+                                        </td>
+                                        <td>
+                                            <input class="form-control" placeholder="必填项" value="">
+                                        </td>
+                                        <td>
+                                            <input class="form-control" placeholder="必填项" value="">
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-danger" href="javascript:;">删除</a>
+                                            <a class="btn btn-danger" href="javascript:;">添加</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-offset-1 col-sm-10">
+                                <a class="btn btn-danger" href="javascript:;">计算总保费</a>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">*总保险金额：</label>
+                            <div class="col-sm-3">
+                                <input class="form-control" type="text" placeholder="拟投保总金额" value="">
+                            </div>
+
+                            <label class="col-sm-1 control-label">*总缴纳保费：</label>
+                            <div class="col-sm-3">
+                                <input class="form-control" type="text" placeholder="拟投保总金额" value="">
+                            </div>
+
+                            <label class="col-sm-1 control-label">包装：</label>
+                            <div class="col-sm-3">
+                                <input class="form-control" type="text" placeholder="拟投保总金额" value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-offset-1 col-sm-10 ">
+                                <p class="alert-warning"> 以下货物不承保：武器弹药、现金、支票、票据、单证、有价证券、信用证、护照、卫星运送过程中遭受的风险；货物运输过程中遭受的核子能、原子能风险，放射性沾染，风险，政治、财政、信用风险；工艺品、金银、珠宝、钻石、手表、玉器、字画、文物古玩等贵重物品运送过程中遭受的风险；冷藏货物制品、鲜活货、动植物(蔬菜水果鲜花除外)、血制品、活牲畜、禽鱼类和其他动物；红木及其制品（红木包括紫檀木类、花梨木类、香枝木类、黑酸枝类、红酸枝木类、乌木类、条纹乌木类和鸡翅木类）；没有包装的散装货、没有包装及包装不善的易碎品；成品车；超高、超宽、超长、超重的大件货物；二手货物，只承保由于火灾爆炸导致的直接损失。</p>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <div class="btnbc btn-button">
+                        <a href="big_data_two.html">
+                            <button type="button" class="btn btn-success">
+                                <i class="icon-save"></i>
+                                保存并下一步
+                            </button>
+                        </a>
+                    </div>
+
+
+                    <!--表单结束-->
+
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <!--row--end-->
+
+
+</div>
+
+
+</body>
+</html>

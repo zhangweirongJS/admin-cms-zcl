@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>check_freight</title>
+    <!--引入public.css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--引入bootstrap.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--字体css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--引入JQ-->
+    <script src="js/jquery.js"></script>
+    <!--引入bootstrap.js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--引入public-->
+    <script src="js/public.js"></script>
+
+    <!--第二部分-->
+    <script src="js/qikoo.js"></script>
+    <script src="js/jpages.js"></script>
+    <!--第三部分js-->
+    <script src="js/laydate.js"></script>
+
+
+</head>
+<body>
+
+<!--进度 start-->
+<div class="data-progress clearfix">
+
+    <h3 class="title">提交资料</h3>
+
+
+    <ul class="clearfix">
+        <li><a href="big_data_one.html">货物信息</a></li>
+        <li class="active"><a href="big_data_two.html">客户信息、运输信息、投保承诺、发票信息</a></li>
+        <li><a href="big_data_three.html">全信息预览</a></li>
+    </ul>
+
+
+</div>
+<!--进度 end-->
+
+<div class="container-fluid prog pb">
+
+    <!--row开始-->
+    <div class="row con-view">
+        <div class="col-lg-12">
+            <section class="panel bor-cor-e0">
+
+                <header class="panel-heading clearfix">
+                    <div class="title-font">
+                        客户信息、运输信息、投保承诺、发票信息
+                    </div>
+                </header>
+
+
+                <div class="panel-body">
+
+
+                    <!--客户信息 start-->
+                    <h3 class="prog-tit">客户信息</h3>
+                    <!--表单-->
+                    <form class="form-horizontal" role="form" action="">
+
+
+                        <!--投保人 start-->
+                        <ul class="row">
+                            <li class="col-xs-12 col-sm-6 col-md-4">
+                                <label class="control-label">投保人名称：</label>
+                                <input class="form-control" type="text" placeholder="" value="">
+                            </li>
+
+                            <li class="col-xs-12 col-sm-6 col-md-4">
+                                <label class="control-label">投保人证件：</label>
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <select class="form-control">
+                                            <option value="">证件类型</option>
+                                            <option value="01">身份证</option>
+                                            <option
+                                                    value="06">工商注册号码
+                                            </option>
+                                        </select>
+
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" value="">
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="col-xs-12 col-sm-6 col-md-4">
+                                <label class="control-label">电话：</label>
+                                <input type="text" class="form-control">
+                            </li>
+                        </ul>
+
+                        <!--投保人 end-->
+
+
+                        <!--被保险人 start-->
+                        <ul class="row">
+                            <li class="col-xs-12 col-sm-6 col-md-4">
+                                <label class="control-label">被保险人名称：</label>
+                                <input class="form-control" type="text" placeholder="" value="">
+                            </li>
+
+                            <li class="col-xs-12 col-sm-6 col-md-4">
+                                <label class="control-label">被保险人证件：</label>
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <select class="form-control">
+                                            <option value="">证件类型</option>
+                                            <option value="01">身份证</option>
+                                            <option
+                                                    value="06">工商注册号码
+                                            </option>
+                                        </select>
+
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" value="">
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="col-xs-12 col-sm-6 col-md-4">
+                                <label class="control-label">电话：</label>
+                                <input type="text" class="form-control">
+                            </li>
+
+                        </ul>
+                        <!--被保险人 end-->
+
+                        <div class="alert-warning">被保人联系电话：支持输入固定电话和移动电话，若需要投保后短信提示请填写移动电话号码</div>
+
+                    </form>
+                    <!--客户信息 end-->
+
+
+                    <!--运输信息 start-->
+                    <h3 class="prog-tit">运输信息</h3>
+                    <!--表单-->
+                    <form class="form-horizontal" role="form" action="">
+
+
+                        <!--运输信息 start-->
+                        <ul class="row">
+                            <li class="col-xs-12 col-sm-6 col-md-3">
+                                <label class="control-label">发票号/运单：</label>
+                                <input class="form-control" type="text" placeholder="" value="">
+                            </li>
+
+                            <li class="col-xs-12 col-sm-6 col-md-3">
+                                <label class="control-label">起运日期：</label>
+                                <input class="form-control" type="text" placeholder="" value="">
+                            </li>
+
+                            <li class="col-xs-12 col-sm-6 col-md-2">
+                                <label class="control-label">是否联运：</label>
+                                <select class="form-control">
+                                    <option value="02">否</option>
+                                    <option value="01">是
+                                    </option>
+                                </select>
+                            </li>
+
+                            <li class="col-xs-12 col-sm-6 col-md-4">
+                                <label class="control-label">运输工具：</label>
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <select class="form-control">
+                                            <option value="">运输方式</option>
+                                            <option value="02">公路</option>
+                                            <option value="05">铁路</option>
+                                            <option value="08">水路-沿海</option>
+                                            <option value="09">水路-内河</option>
+                                        </select>&nbsp;
+
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" value="">
+                                    </div>
+
+                                </div>
+                            </li>
+
+
+                            <li class="col-xs-12 col-sm-12 col-md-12">
+                                <label class="control-label">起运地：</label>
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <select class="form-control">
+                                            <option value="">请选择起运地</option>
+                                            <option value="110100">北京</option>
+                                            <option value="120100">天津</option>
+                                            <option value="130000">河北</option>
+                                            <option value="140000">山西</option>
+                                            <option value="150000">内蒙</option>
+                                            <option value="210000">辽宁</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-control">
+                                            <option value=""></option>
+                                        </select>&nbsp;
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" type="text" placeholder="起运地详细地址" value="">
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="col-xs-12 col-sm-12 col-md-12">
+                                <label class="control-label">目的地：</label>
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <select class="form-control">
+                                            <option value="">请选择起运地</option>
+                                            <option value="110100">北京</option>
+                                            <option value="120100">天津</option>
+                                            <option value="130000">河北</option>
+                                            <option value="140000">山西</option>
+                                            <option value="150000">内蒙</option>
+                                            <option value="210000">辽宁</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-control">
+                                            <option value=""></option>
+                                        </select>&nbsp;
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" placeholder="目的地详细地址" type="text" value="">
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                        <!--起运地 end-->
+
+                        <div class="alert-warning">
+                            起运地、目的地必须是中国大陆地址（不含港、澳、台地区），20字以内
+                            起运日期为起运地的最后一个仓库装箱日期
+                            船龄在25年以内船舶，总吨大于50
+                        </div>
+
+
+                    </form>
+                    <!--运输信息 end-->
+
+
+                    <!--投保承诺 start-->
+                    <h3 class="prog-tit">投保承诺</h3>
+
+                    <div class="alert-warning">
+                        1.被保险人处请务必填写实际货主。</br>
+
+                        2.投保人应对投保信息的准确性和完整性负责，若由于投保人录入的被保险人、保险标的、运单号、目的地等重要信息不准确而影响理赔，承保人及港融不承担任何责任。</br>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 我已阅读以上信息并确认保单信息准确性和完整性
+                            </label>
+                        </div>
+                    </div>
+                    <!--投保承诺 end-->
+
+
+                    <!--发票信息 start-->
+                    <h3 class="prog-tit">发票信息</h3>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">是否开发票
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="alert-warning">
+                        保费比例： 普通货物：（费率0.3‰）、玻璃陶瓷及易碎品：（费率0.3‰）、蔬菜、鲜花、水果：（费率0.6‰） 保费不足5元，按5元收取
+                        免赔条件：
+                    </div>
+
+                    <div class="alert-warning">
+                        普通货物：无免赔；玻璃、陶瓷等易碎品：每次事故免赔为保险金额的5%；蔬菜、水果、鲜花：每次事故免赔为5000元或损失金额的10%，二者以高者为准。
+                        我已阅读 《客户投保承诺书》 和 《投保风险说明书》
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">我已阅读 《客户投保承诺书》 和 《投保风险说明书》
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="alert-warning">
+                        投保 暂存草稿
+                    </div>
+
+
+                    <div class="btnbc btn-button">
+                        <a href="big_data_three.html">
+                            <button type="button" class="btn btn-success">
+                                <i class="icon-save"></i>
+                                保存并下一步
+                            </button>
+                        </a>
+
+                        <a href="big_data_one.html">
+                            <button type="button" class="btn">
+                                返回上一步
+                            </button>
+                        </a>
+                    </div>
+
+
+                    <!--表单结束-->
+
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+    <!--row--end-->
+
+
+</div>
+
+
+</body>
+</html>
